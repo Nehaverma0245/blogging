@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="styles.css ">
+    <style>
+        article img {
+            vertical-align: middle;
+        }
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+    </form>
+<div id="header">
+    <div class="navbar">
+        <nav>
+            <img src="SUGAR-Blog_Logo-Final-661-X-189.webp" class="logo">
+            <ul>
+                <li><a href="#">MAKEUP</a></li>
+                <li><a href="#">SKIN</a></li>
+                <li><a href="#">HAIR</a></li>
+                <li><a href="#">FASHION</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>CATEGORY:makeup blog</h1>
+        </div>
+    </div>
+    <div>
+        <main>
+            <article>
+                <img src="neha.jpeg">
+                <h2>Makeup tips that'll make your life easier </h2>
+                <p>Whether you are a beginner or a pro, makeup tips never fail to <br>surprise and always leave
+                    you with a ‘how did I not know this?’ Makeup hacks that <br>save your time without
+                    compromising on the glam factor are a blessing. Smudging, <br>fading or creasing, here are
+                    some tricks and tips that you can rely on to save time and money!</p>
+                <a href="https://in.sugarcosmetics.com/blog/makeup-tips-that'll-make-your-life-easier?srsltid=AfmBOoojjv_j5MbLtFua75iBKN_3j1_XJFLVemXuNYEHggVUvDjdQlWF">Read more...</a>
+            </article>
+
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </main>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <p>made by heart &#10084;</p>
+    </div>
+</div>
+</body>
+</html>
